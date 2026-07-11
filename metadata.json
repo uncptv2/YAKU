@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Yaku Líderes",
+  "description": "Una plataforma web gamificada para incentivar el cuidado y conservación del agua en estudiantes escolares a través de 48 retos interactivos, medallas y un tablero de competencia cooperativa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

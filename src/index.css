@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc; /* Crisp slate-50 background */
+  color: #0f172a; /* Slate-900 text */
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(204, 251, 241, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(254, 244, 244, 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Geometric Balance Custom Utility Classes */
+
+.geom-glass-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8); /* Slate-200 with soft opacity */
+  border-radius: 16px; /* Controlled medium rounding for geometric balance */
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.02), 
+    0 2px 4px -1px rgba(0, 0, 0, 0.01),
+    0 10px 15px -3px rgba(15, 23, 42, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.geom-glass-card:hover {
+  border-color: rgba(13, 148, 136, 0.3); /* Soft teal border on hover */
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.02),
+    0 20px 25px -5px rgba(15, 23, 42, 0.05);
+}
+
+.geom-header-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0d9488 100%);
+}
+
+.geom-accent-rose {
+  color: #f43f5e;
+}
+
+.geom-bg-rose-glass {
+  background-color: rgba(254, 242, 242, 0.9);
+  border: 1px solid rgba(251, 207, 207, 0.8);
+}
+
+.geom-border-teal {
+  border-color: rgba(13, 148, 136, 0.4);
+}
+
+.geom-btn-primary {
+  background-color: #0d9488; /* Teal-600 */
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid #0f766e;
+  box-shadow: 0 2px 4px rgba(13, 148, 136, 0.1);
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.geom-btn-primary:hover {
+  background-color: #0f766e; /* Teal-700 */
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.2);
+  transform: translateY(-1px);
+}
+
+.geom-btn-primary:active {
+  transform: translateY(0);
+}
+
+.geom-btn-secondary {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.geom-btn-secondary:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.geom-badge-teal {
+  background-color: #f0fdfa;
+  color: #0f766e;
+  border: 1px solid rgba(13, 148, 136, 0.2);
+}
+
+.geom-badge-rose {
+  background-color: #fff1f2;
+  color: #be123c;
+  border: 1px solid rgba(244, 63, 94, 0.2);
+}
+
+.geom-badge-slate {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+/* Accent Lines and Decorative Elements */
+.geom-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(226, 232, 240, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 232, 240, 0.4) 1px, transparent 1px);
+}
