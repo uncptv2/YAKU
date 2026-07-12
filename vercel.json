@@ -1,19 +1,15 @@
 {
   "functions": {
-    "api/**/*.ts": { "runtime": "vercel-node@latest" },
-    "api/**/*.js": { "runtime": "vercel-node@latest" }
-  },
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
-        { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
-      ]
+    "api/**/*.ts": {
+      "runtime": "vercel-node@latest"
+    },
+    "api/**/*.js": {
+      "runtime": "vercel-node@latest"
     }
-  ],
+  },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" }
   ]
 }
+
 
