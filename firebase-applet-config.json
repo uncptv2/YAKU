@@ -1,9 +1,9 @@
 {
-  "projectId": "remixed-project-id",
-  "appId": "remixed-app-id",
-  "apiKey": "remixed-api-key",
-  "authDomain": "remixed-auth-domain",
-  "storageBucket": "remixed-storage-bucket",
-  "messagingSenderId": "remixed-messaging-sender-id",
-  "measurementId": "remixed-measurement-id"
+  "projectId": "yaku-8e133",
+  "appId": "1:374793078421:web:b5cc7b59cd8b545100bd9c",
+  "apiKey": "AIzaSyAkL1dA1IixRjU8LrM2iUY33WR4PbrhYkg",
+  "authDomain": "://firebaseapp.com",
+  "storageBucket": "yaku-8e133.firebasestorage.app",
+  "messagingSenderId": "374793078421",
+  "measurementId": "G-HB6RH2TQWR"
 }
