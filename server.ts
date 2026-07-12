@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 import fs from "fs";
-import { createServer as createViteServer } from "vite";
+
 
 const PORT = 3000;
 const DB_FILE = path.join(process.cwd(), "db.json");
@@ -549,11 +549,11 @@ async function startServer() {
 
   // Vite middleware setup for development, or serving compiled static build files in production
   if (process.env.NODE_ENV !== "production") {
-    const vite = await createViteServer({
+    //const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
     });
-    app.use(vite.middlewares);
+    //app.use(vite.middlewares);
   } else {
     const distPath = path.join(process.cwd(), "dist");
     app.use(express.static(distPath));
