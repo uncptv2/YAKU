@@ -60,24 +60,11 @@ const defaultDb = {
 
 // Database utility functions
 function loadDb() {
-  try {
-    if (fs.existsSync(DB_FILE)) {
-      const content = fs.readFileSync(DB_FILE, "utf-8");
-      return JSON.parse(content);
-    }
-  } catch (error) {
-    console.error("Error reading database file, using defaults:", error);
-  }
-  saveDb(defaultDb);
   return defaultDb;
 }
 
 function saveDb(data: any) {
-  try {
-    fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2), "utf-8");
-  } catch (error) {
-    console.error("Error writing to database file:", error);
-  }
+  return;
 }
 
 async function startServer() {
